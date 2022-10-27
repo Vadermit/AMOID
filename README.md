@@ -3,11 +3,9 @@ AMOID is a GA and ABM based microtransit design model that collaboratively optim
 
 > Author: Jinming Yang
 
-
-
 ## Model Framework
 
-![image-20221027223337243](./images/image-20221027223337243.png)
+![image-20221027223337243](./images/framework.png)
 
 ## Quick Test
 
