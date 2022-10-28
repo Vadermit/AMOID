@@ -1595,7 +1595,7 @@ def evaluate_bus_fleet_assign_agent_based(taxi_fleet_size, full_dt_data, route_l
 #         print('bus_fleet_size:')
 #         print(bus_fleet_size)
 #         print()
-        score, _ = evaluation_agent_based(taxi_fleet_size, full_dt_data, route_list, bus_fleet_size, G_ped, G_routing, traffic_signals_list, signal_bundle_dict, intersections_xy_dict, stop_time_loss, no_repeat, complex_mode, unit_bus_cost, unit_taxi_cost, intersection_time_loss, OD_related_input_dict = OD_related_input_dict, global_eva = global_eva, start_hour = 7, end_hour = 22, print_ = False)
+        score, _ = evaluation_agent_based(taxi_fleet_size, full_dt_data, route_list, bus_fleet_size, G_ped, G_routing, traffic_signals_list, signal_bundle_dict, intersections_xy_dict, stop_time_loss, no_repeat, complex_mode, unit_bus_cost, unit_taxi_cost, intersection_time_loss, OD_related_input_dict = OD_related_input_dict, value_coefficients = value_coefficients, global_eva = global_eva, start_hour = 7, end_hour = 22, print_ = False)
         bus_fleet_size_score_tuple_list.append((score, bus_fleet_size))
     bus_fleet_size_score_tuple_list = sorted(bus_fleet_size_score_tuple_list, key=lambda x: x[0], reverse = True)
     return bus_fleet_size_score_tuple_list[0][0], bus_fleet_size_score_tuple_list[0][1]
